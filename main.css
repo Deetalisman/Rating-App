@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+section{
+    width: 330px;
+    background-color:rgb(16, 26, 35);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.icon{
+    background-color: rgb(65, 62, 73);
+    padding: 8px 5px 0 9px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+section h3{
+    margin-top: 20px;
+}
+section p{
+    color: gray;
+    margin-top: 20px;
+}
+.number{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.number p{
+    width: 21%;
+    margin: 0 2%;
+    background-color: rgba(105, 101, 101, 0.4);
+    height: 47px;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 19px;
+    color: gray;
+    cursor: pointer;
+}
+.number p:hover{
+    background-color: rgb(246, 135, 50);
+}
+button{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(246, 135, 50);
+    padding: 5px 0;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 17px;
+    height: 45px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: rgb(246, 135, 50);
+}
+.alert{
+    text-align: center;
+    position: absolute;
+    width: 330px;
+    background-color:rgb(16, 26, 35);
+    padding: 20px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+   display: none;
+}
+.alert img{
+    height: 90px;
+}
+.alert h2{
+    margin-top: 10px;
+}
+.par{
+    font-size: 13px;
+}
+.rate{
+    color: rgb(244, 177, 125);
+    background-color: rgba(105, 101, 101, 0.4);
+    padding: 5px;
+    border-radius: 10px;
+}
+.hidden{
+    display: block;
+}
+.alert img{
+    margin-top: 20px;
+}
+@media screen and (max-width:400px) {
+    section{
+        width: 85%;
+    }
+    .alert{
+        width: 100%;
+    }
+}
